@@ -5,30 +5,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] scores = {0, 150, 500, 5000};
-
-        printScores(scores);
-        checkScoreIfZero(scores);
+        test("Hello world");
 
 
 
 
 
     }
-    public static void printScores(int[] scores){
+    public static void test(String message){
+        System.out.println(message);
 
-        for (int i = 0; i < scores.length ; i++) {
-            System.out.println(scores[i]);
-
-        }
-     checkScoreIfZero(scores);
     }
+    public static int addition(int x, int y){
 
-    public static void checkScoreIfZero(int[] scores){
-        if(scores[0] == 0){
-            System.out.println("The score is indeed zero");
-        }else{
-            System.out.println("The score is not Zero");
-        }
+        return x + y;
     }
 }
