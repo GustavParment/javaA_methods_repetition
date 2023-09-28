@@ -5,31 +5,30 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-       // Object Creation AKA Instantiation
-        Student benny = new Student(15,"Benny", true);
-        Student frida = new Student(22,"Frida",false);
+        int[] scores = {0, 150, 500, 5000};
 
+        printScores(scores);
+        checkScoreIfZero(scores);
 
-
-        // Set Object Values
-
-        Object banana = benny.showIfSleepy();
-        System.out.println(banana);
-        // Print Object Values
-
-        System.out.println(benny.name);
-        System.out.println(benny.age);
-        System.out.println(frida.name);
-        System.out.println(frida.age);
-
-
-
-
-
-        }
 
 
 
 
     }
+    public static void printScores(int[] scores){
 
+        for (int i = 0; i < scores.length ; i++) {
+            System.out.println(scores[i]);
+
+        }
+     checkScoreIfZero(scores);
+    }
+
+    public static void checkScoreIfZero(int[] scores){
+        if(scores[0] == 0){
+            System.out.println("The score is indeed zero");
+        }else{
+            System.out.println("The score is not Zero");
+        }
+    }
+}
